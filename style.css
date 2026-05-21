@@ -1,0 +1,228 @@
+:root {
+  --bg-color: #2c1a1a;        /* Soft, deep burgundy-brown */
+  --column-color: #3d2626;    /* Lighter, warmer shade for the content */
+  --text-color: #f5ebe6;      /* Off-white/cream for comfortable reading */
+  --accent-color: #e2a280;    /* Muted peach/copper for links and highlights */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  width: 100%;
+  position: relative;
+}
+
+/* Navigation Toolbar Layout */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--column-color);
+  padding: 0.75rem 2.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-brand a {
+  font-weight: bold;
+  color: var(--text-color);
+  border: none;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  border: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+.standalone-rss {
+  position: absolute;
+  right: 0;
+  background-color: var(--accent-color);
+  color: var(--bg-color) !important;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.standalone-rss:hover {
+  transform: translateY(-2px); /* Subtle floating lift on hover */
+  box-shadow: 0 4px 12px rgba(226, 162, 128, 0.4);
+}
+/* Page Header adjust */
+.page-header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+/* Post list styling helper */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.post-item {
+  margin-bottom: 1.5rem;
+}
+
+.post-date {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 4rem 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Background Canvas */
+#wave-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; 
+  pointer-events: none; 
+}
+
+/* Center Column */
+.content-wrapper {
+  position: relative;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--column-color);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Site Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  color: rgba(245, 235, 230, 0.6);
+  font-size: 0.85rem;
+  font-family: monospace;
+}
+
+.site-footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent-color);
+}
+
+.site-footer a:hover {
+  border-bottom-style: solid;
+}
+
+.content-wrapper {
+  flex: 1; /* push the footer down on short pages */
+}
+
+.post-meta {
+  color: var(--accent-color);
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin-top: -0.1rem;
+  opacity: 0.8;
+}
+
+.error-container {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.error-message {
+  font-size: 1.15rem;
+  max-width: 500px;
+  margin: 0 auto 2.5rem auto;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.error-actions .btn-home {
+  display: inline-block;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  border: 1px solid rgba(245, 235, 230, 0.2);
+  transition: all 0.2s ease;
+}
+
+.error-actions .btn-home:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 15px rgba(226, 162, 128, 0.3);
+}
+
+.attribution {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  margin-top: 0.5rem;
+}
+
+.attribution a {
+  color: inherit;
+  border-bottom: 1px dashed var(--text-color);
+}
+
+/*  RSS toolbar button */
+.nav-links .rss-btn {
+  background-color: var(--accent-color);
+  color: var(--bg-color) !important;     /* Flips text color to the dark background for high contrast */
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-links .rss-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* typography/link rules  */
+h1, h2, h3 { color: var(--text-color); margin-top: 0; }
+a { color: var(--accent-color); text-decoration: none; border-bottom: 1px dashed var(--accent-color); }
+a:hover { border-bottom-style: solid; }
+hr { border: 0; height: 1px; background: rgba(245, 235, 230, 0.2); margin: 2rem 0; }

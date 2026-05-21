@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+  {% if title %}{{ title }} | {% endif %}nickplaysjazz
+  </title>
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <canvas id="wave-canvas"></canvas>
+
+  <div class="nav-container">
+    
+    <nav class="toolbar">
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/posts/">Posts</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+
+    <a href="/feed.xml" class="standalone-rss" title="Subscribe via RSS">RSS</a>
+
+  </div>
+
+  <main class="content-wrapper">
+    <header class="page-header">
+      <h1>{{ title }}</h1>
+
+      {% if tags and "posts" in tags %}
+        <p class="post-meta">{{ page.date | postDate }}</p>
+      {% endif %}
+    </header>
+
+    <hr>
+
+    <section>
+      {{ content | safe }}
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 nickplaysjazz. All rights reserved.</p>
+    <p class="attribution">This site is powered by <a href="https://11ty.dev" rel="nofollow">Eleventy</a>. 
+   <p class="attribution">Icons by <a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome</a> (<a href="https://fontawesome.com/license/free">CC-BY 4.0 License</a>)</p>
+
+</footer>
+
+  <script src="/waves.js"></script>
+</body>
+</html>
