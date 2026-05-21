@@ -19,6 +19,13 @@ module.exports = async function(eleventyConfig) {
     }).format(dateObj);
   });
 
+  eleventyConfig.addFilter("feedDate", (dateObj) => {
+    const d = new Date(dateObj);
+    const dateOnly = d.toISOString().split('T')[0];
+    // return with UTC noon
+    return `${dateOnly}T12:00:00Z`;
+  });
+
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi.getFilteredByTag("posts").sort((a, b) => {
       return b.date - a.date; // newest to oldest
