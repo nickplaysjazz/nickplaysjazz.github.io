@@ -37,7 +37,7 @@ We could stop here, but we can do better than a very long series. Consider the h
 Some manipulation with indices gets us what we need:
 $$ \begin{equation*}\begin{split}
 H_{2n-1} &= 1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{2n-2} + \frac{1}{2n-1} \\
-\frac{H_{n-1}}{2} &= \frac{1}{2} \left ( 1+\frac{1}{2} + \cdots + \frac{1}{n-1} + \frac{1}{n-2} \right ) = \frac{1}{2} + \frac{1}{4}+\cdots + \frac{1}{2n-2} \\
+\frac{H_{n-1}}{2} &= \frac{1}{2} \left ( 1+\frac{1}{2} + \cdots + \frac{1}{n-1} \right ) = \frac{1}{2} + \frac{1}{4}+\cdots + \frac{1}{2n-2} \\
 \Rightarrow a_n &= H_{2n-1} - \frac{H_{n-1}}{2}
 \end{split}\end{equation*}$$
 
