@@ -1,11 +1,26 @@
 const fs = require("fs");
 const {DateTime} = require("luxon")
 
+// markdown katex support
+const markdownIt = require("markdown-it");
+const texmath = require("markdown-it-texmath");
+const katex = require("katex");
+
 const TIME_ZONE = "America/Chicago";
 
 module.exports = async function(eleventyConfig) {
   const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
   const pluginRss = await import("@11ty/eleventy-plugin-rss");
+
+  // texmath 
+  const mdLib = markdownIt({ html: true })
+    .use(texmath, {
+      engine: katex,
+      delimiters: "dollars", // Enforces $inline$ and $$display$$ delimiters
+      //macros: { "\\RR": "\\mathbb{R}" } // add custom macros here
+    });
+  
+  eleventyConfig.setLibrary("md", mdLib);
 
   // fix time zone
   eleventyConfig.addDateParsing(function(dateValue) {

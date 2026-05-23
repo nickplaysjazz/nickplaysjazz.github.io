@@ -221,6 +221,29 @@ body {
   opacity: 0.9;
 }
 
+/* tables for md */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    line-height: 0.5;
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2a280;
+}
+
+thead th {
+    background-color: #e2a280;
+    font-weight: 600;
+    color: #24292e;
+    border-bottom: 2px solid #e2a280;
+}
+
 /* typography/link rules  */
 h1, h2, h3 { color: var(--text-color); margin-top: 0; }
 a { color: var(--accent-color); text-decoration: none; border-bottom: 1px dashed var(--accent-color); }
