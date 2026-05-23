@@ -1,8 +1,25 @@
 const fs = require("fs");
+const {DateTime} = require("luxon")
+
+const TIME_ZONE = "America/Chicago";
 
 module.exports = async function(eleventyConfig) {
   const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
   const pluginRss = await import("@11ty/eleventy-plugin-rss");
+
+  // fix time zone
+  eleventyConfig.addDateParsing(function(dateValue) {
+		let localDate;
+		if(dateValue instanceof Date) { // and YAML
+			localDate = DateTime.fromJSDate(dateValue, { zone: "utc" }).setZone(TIME_ZONE, { keepLocalTime: true });
+		} else if(typeof dateValue === "string") {
+			localDate = DateTime.fromISO(dateValue, { zone: TIME_ZONE });
+		}
+		if (localDate?.isValid === false) {
+			throw new Error(`Invalid \`date\` value (${dateValue}) is invalid for ${this.page.inputPath}: ${localDate.invalidReason}`);
+		}
+		return localDate;
+	});
 
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("waves.js");
@@ -17,13 +34,6 @@ module.exports = async function(eleventyConfig) {
       month: 'short',
       day: 'numeric'
     }).format(dateObj);
-  });
-
-  eleventyConfig.addFilter("feedDate", (dateObj) => {
-    const d = new Date(dateObj);
-    const dateOnly = d.toISOString().split('T')[0];
-    // return with UTC noon
-    return `${dateOnly}T12:00:00Z`;
   });
 
   eleventyConfig.addCollection("posts", function(collectionApi) {

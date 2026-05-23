@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/nickplaysjazz/nickplaysjazz.github.io#readme",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.5"
+    "@11ty/eleventy": "^3.1.5",
+    "luxon": "^3.7.2"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^3.0.0"

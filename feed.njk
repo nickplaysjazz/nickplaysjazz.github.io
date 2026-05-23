@@ -17,7 +17,7 @@ metadata:
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   
-  <updated>{{ collections.posts | getNewestCollectionItemDate | feedDate }}</updated>
+  <updated>{{ collections.posts | getNewestCollectionItemDate | postDate }}</updated>
   
   <id>{{ metadata.url }}</id>
   <author>
@@ -29,7 +29,7 @@ metadata:
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
     
-    <updated>{{ post.date | feedDate }}</updated>
+    <updated>{{ post.date | postDate }}</updated>
     
     <id>{{ absolutePostUrl }}</id>
     <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
