@@ -6,11 +6,16 @@ const markdownIt = require("markdown-it");
 const texmath = require("markdown-it-texmath");
 const katex = require("katex");
 
+// code syntax highlighting
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 const TIME_ZONE = "America/Chicago";
 
 module.exports = async function(eleventyConfig) {
   const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
   const pluginRss = await import("@11ty/eleventy-plugin-rss");
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // texmath 
   const mdLib = markdownIt({ html: true })
@@ -36,6 +41,7 @@ module.exports = async function(eleventyConfig) {
 		return localDate;
 	});
 
+  eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("waves.js");
   eleventyConfig.addPassthroughCopy("pretty-feed-v3.xsl");

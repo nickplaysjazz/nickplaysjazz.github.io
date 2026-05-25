@@ -20,6 +20,7 @@
   "homepage": "https://github.com/nickplaysjazz/nickplaysjazz.github.io#readme",
   "dependencies": {
     "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "katex": "^0.17.0",
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.1",

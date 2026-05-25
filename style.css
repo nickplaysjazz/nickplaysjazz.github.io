@@ -301,6 +301,31 @@ thead th {
     border-bottom: 2px solid #e2a280;
 }
 
+/* code blocks */
+pre[class*="language-"],
+code[class*="language-"] {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  border-radius: 8px;
+}
+
+pre[class*="language-"] {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  overflow-x: auto; /* local scrollbar */
+  background: #1d1f21 !important; /* deep dark layout canvas */
+}
+
+/* inline code blocks */
+:not(pre) > code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  background-color: #1d1f21;      
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  word-break: break-word;
+}
+
 /* typography/link rules  */
 h1, h2, h3 { color: var(--text-color); margin-top: 0; }
 a { color: var(--accent-color); text-decoration: none; border-bottom: 1px dashed var(--accent-color); }

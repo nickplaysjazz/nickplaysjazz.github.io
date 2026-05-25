@@ -51,4 +51,4 @@ For $n=50$ strings, **we expect on average to have $a_{50} \approx 2.938$ loops*
 
 Since our solution grows logarithmically, you can fill the box with enough strings to get any arbitrary number of loops on average after our tying procedure. However, the number of strings quickly becomes ludicrously large. For instance, if you wanted to get on average $a_n=50$ loops after our tying procedure, you must start with a box that has on the order of $10^{43}$ strings!
 
-Stay tuned for Part II of this post, where I will be doing some Monte Carlo simulations to measure the solution to this problem statistically and compare it to our theoretical answer.
+Stay tuned for [Part II]({% for post in collections.all %}{% if post.inputPath == "./posts/string-problem-2.md" %}{{ post.url | url }}{% endif %}{% endfor %}) of this post, where I will be doing some Monte Carlo simulations to measure the solution to this problem statistically and compare it to our theoretical answer.
