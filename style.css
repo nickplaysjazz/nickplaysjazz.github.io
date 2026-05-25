@@ -5,6 +5,63 @@
   --accent-color: #e2a280;    /* Muted peach/copper for links and highlights */
 }
 
+/* prevent padding from pushing elements off the screen */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ensure images never stretch past their container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+    /* reduce body padding */
+    body {
+        padding: 1.5rem 0.5rem;
+    }
+
+    /* shrink the wrapper padding */
+    .content-wrapper {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    /* stack the toolbar and RSS button vertically instead of horizontally */
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .toolbar {
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        width: auto;
+    }
+
+    /* nav links to wrap onto a second line if they need to */
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.25rem;
+    }
+
+    /* absolute-positioned RSS button into the normal layout */
+    .standalone-rss {
+        position: static;
+        display: inline-block;
+        margin-top: 0.25rem;
+    }
+    
+    /* prevent tables from breaking the layout */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
 .nav-container {
   display: flex;
   justify-content: center;
