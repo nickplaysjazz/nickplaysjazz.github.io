@@ -17,9 +17,8 @@ metadata:
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   
-  <updated>{{ collections.posts | getNewestCollectionItemDate | postDate }}</updated>
-  
-  <id>{{ metadata.url }}</id>
+  {% set newestDate = collections.posts | getNewestCollectionItemDate %}
+<updated>{{ newestDate.toISOString() }}</updated>
   <author>
     <name>{{ metadata.author.name }}</name>
   </author>
@@ -29,7 +28,7 @@ metadata:
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
     
-    <updated>{{ post.date | postDate }}</updated>
+    <updated>{{ post.date.toISOString() }}</updated>
     
     <id>{{ absolutePostUrl }}</id>
     <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>

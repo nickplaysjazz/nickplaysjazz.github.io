@@ -16,6 +16,7 @@ module.exports = async function(eleventyConfig) {
   const pluginRss = await import("@11ty/eleventy-plugin-rss");
 
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss.default);
 
   // texmath 
   const mdLib = markdownIt({ html: true })
@@ -45,8 +46,6 @@ module.exports = async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("waves.js");
   eleventyConfig.addPassthroughCopy("pretty-feed-v3.xsl");
-
-  eleventyConfig.addPlugin(pluginRss.default);
 
   // date formatting filter
   eleventyConfig.addFilter("postDate", (dateObj) => {
