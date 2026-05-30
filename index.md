@@ -26,15 +26,15 @@ This website is a member of the Combo Crew webring. Visit other members:
 </div>
 
 <div class="no-style" style="display: flex; justify-content: center; align-items: center; gap: 1.5rem;">
-  <a href="https://webri.ng/webring/combocrew/previous?via=https%3A%2F%2Fnickplaysjazz.com%2F" 
+  <a href="https://webri.ng/webring/combocrew/previous?via=https://nickplaysjazz.com/" 
      title="Previous Member" 
      style="color: rgba(245, 235, 230, 0.6); font-size: 1.5rem; font-family: monospace; text-decoration: none; display: flex; align-items: center; height: 31px;">&lt;</a>
   
-  <a href="https://webri.ng/webring/combocrew/random?via=https%3A%2F%2Fnickplaysjazz.com%2F" style="display: block; height: 31px;">
+  <a href="https://webri.ng/webring/combocrew/random?via=https://nickplaysjazz.com/"  style="display: block; height: 31px;">
     <img src="https://tilde.club/~twinbfield/assets/combo_crew_88x31_red.png" border="0" width="88" height="31" alt="Combo Crew Webring" style="display: block;" />
   </a>
   
-  <a href="https://webri.ng/webring/combocrew/next?via=https%3A%2F%2Fnickplaysjazz.com%2F"   
+  <a href="https://webri.ng/webring/combocrew/next?via=https://nickplaysjazz.com/"  
      title="Next Member" 
      style="color: rgba(245, 235, 230, 0.6); font-size: 1.5rem; font-family: monospace; text-decoration: none; display: flex; align-items: center; height: 31px;">&gt;</a>
 </div>
