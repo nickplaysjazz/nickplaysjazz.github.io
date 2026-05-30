@@ -17,18 +17,24 @@ I'll be using this blog to share updates on whatever fun projects I'm working on
 {%- endfor -%}
 </ul>
 
-### Recent Thoughts
+### Recent Finds
+* [The 2026 Junethack Tournament](https://junethack.net/) - Starts June 1st! Keep an eye on how I'm doing
 * [Melon Match](https://twinadam.itch.io/melon-match) - An entertaining Suika-clone, playable in your browser. Made by a friend of mine!
-* [The 2026 Junethack Tournament](https://junethack.net/) - Coming up soon!
-* [The Boring Internet](https://www.terrygodier.com/the-boring-internet) by Terry Godier - Fantastic read on our relationship with the internet in 2026.
 
-<div class="site-footer">
-This site is a member of the Combo Crew. Visit another member:
+<div class="site-footer" style="text-align: center; margin-bottom: 1rem;">
+This website is a member of the Combo Crew webring. Visit other members:
 </div>
-<center>
-<div class="no-style">
-<a href="https://webri.ng/webring/combocrew/next?via=https%3A%2F%2Fnickplaysjazz.com%2F">
-<img src="https://tilde.club/~twinbfield/assets/combo_crew_88x31_red.png" border="0" width="88" height="31" alt="Combo Crew Webring" />
-</a>
+
+<div class="no-style" style="display: flex; justify-content: center; align-items: center; gap: 1.5rem;">
+  <a href="https://webri.ng/webring/combocrew/previous?via=https%3A%2F%2Fnickplaysjazz.com%2F" 
+     title="Previous Member" 
+     style="color: rgba(245, 235, 230, 0.6); font-size: 1.5rem; font-family: monospace; text-decoration: none; display: flex; align-items: center; height: 31px;">&lt;</a>
+  
+  <a href="https://webri.ng/webring/combocrew/random?via=https%3A%2F%2Fnickplaysjazz.com%2F" style="display: block; height: 31px;">
+    <img src="https://tilde.club/~twinbfield/assets/combo_crew_88x31_red.png" border="0" width="88" height="31" alt="Combo Crew Webring" style="display: block;" />
+  </a>
+  
+  <a href="https://webri.ng/webring/combocrew/next?via=https%3A%2F%2Fnickplaysjazz.com%2F"   
+     title="Next Member" 
+     style="color: rgba(245, 235, 230, 0.6); font-size: 1.5rem; font-family: monospace; text-decoration: none; display: flex; align-items: center; height: 31px;">&gt;</a>
 </div>
-</center>
