@@ -18,7 +18,7 @@ I'll be using this blog to share updates on whatever fun projects I'm working on
 </ul>
 
 ### Recent Finds
-* [The 2026 Junethack Tournament](https://junethack.net/) - Starts June 1st! Keep an eye on how I'm doing
+* [My current 2026 Junethack Tournament performance](https://junethack.net/user/nickplaysjazz) - Began June 1st. Keep an eye on how I'm doing, and join in yourself too!
 * [Melon Match](https://twinadam.itch.io/melon-match) - An entertaining Suika-clone, playable in your browser. Made by a friend of mine!
 
 <div class="site-footer" style="text-align: center; margin-bottom: 1rem;">
