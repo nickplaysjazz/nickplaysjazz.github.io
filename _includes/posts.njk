@@ -1,0 +1,29 @@
+---
+layout: base.njk
+---
+<h1>{{ title }}</h1>
+<p class="gray" style="margin-top: -0.5rem; margin-bottom: 2rem;">
+  {{ page.date | postDate }}
+</p>
+
+{{ content | safe }}
+
+<hr style="margin: 3rem 0; opacity: 0.15; border-style: dashed;" />
+
+<div class="giscus"></div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="nickplaysjazz/nickplaysjazz.github.io"
+        data-repo-id="R_kgDOShbjVA"
+        data-category="General"
+        data-category-id="DIC_kwDOShbjVM4C-mhz"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="https://www.nickplaysjazz.com/style.css"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>

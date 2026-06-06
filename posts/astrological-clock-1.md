@@ -76,4 +76,4 @@ Calculations for: 2026-06-04 12:00 UTC
 +---------+----------+----------+
 ```
 
-Keep an eye out for my next post, where we will try to validate this code.
+Keep an eye out for my [next post]({% for post in collections.all %}{% if post.inputPath == "./posts/astrological-clock-2.md" %}{{ post.url | url }}{% endif %}{% endfor %}), where we will try to validate this code.
