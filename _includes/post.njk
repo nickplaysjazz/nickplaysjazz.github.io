@@ -1,14 +1,9 @@
 ---
 layout: base.njk
 ---
-<h1>{{ title }}</h1>
-<p class="gray" style="margin-top: -0.5rem; margin-bottom: 2rem;">
-  {{ page.date | postDate }}
-</p>
-
 {{ content | safe }}
 
-<hr style="margin: 3rem 0; opacity: 0.15; border-style: dashed;" />
+<hr>
 
 <div class="giscus"></div>
 
@@ -22,8 +17,9 @@ layout: base.njk
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="https://www.nickplaysjazz.com/style.css"
+        data-theme="transparent_dark"
         data-lang="en"
         crossorigin="anonymous"
         async>
 </script>
+<p class="attribution">Comments are powered by <a href="https://giscus.app/" rel="nofollow">Giscus</a>. 

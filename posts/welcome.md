@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: post.njk
 title: Welcome to nickplaysjazz!
 tags: posts
 date: 2026-05-21

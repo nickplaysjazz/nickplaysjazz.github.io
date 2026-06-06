@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: post.njk
 title: The 2026 Vegetable Championship
 tags: posts
 date: 2026-05-27

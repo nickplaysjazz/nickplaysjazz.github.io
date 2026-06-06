@@ -18,6 +18,7 @@ I'll be using this blog to share updates on whatever fun projects I'm working on
 </ul>
 
 ### Recent Finds
+* I've added support for comments on my post via [Giscus](https://giscus.app/). Leave your reactions & thoughts!
 * [My current 2026 Junethack Tournament performance](https://junethack.net/user/nickplaysjazz) - Began June 1st. Keep an eye on how I'm doing, and join in yourself too!
 * [Melon Match](https://twinadam.itch.io/melon-match) - An entertaining Suika-clone, playable in your browser. Made by a friend of mine!
 

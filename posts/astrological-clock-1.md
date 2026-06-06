@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: post.njk
 title: Making an Astrological Clock I
 tags: posts
 date: 2026-06-04

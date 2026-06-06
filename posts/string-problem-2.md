@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: post.njk
 title: The 3B1B String Problem II
 tags: posts
 date: 2026-05-25
