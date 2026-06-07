@@ -30,7 +30,7 @@ Let's define some goals:
 
     Traditional astrology utilizes only these bodies to begin with. That's plenty to work with. We will just neglect Uranus and Neptune along with Pluto and the other dwarf planets for now. In any case, they move extremely slowly, which is not so interesting on a clock.
 
-2. **Positions should be accurate to $\pm$ 1 arc-minute when compared with high-quality planetary position data.**
+2. **Positions should be accurate to roughly $\pm$ 1 arc-minute when compared with high-quality planetary position data.**
     
     How accurate is this? The fastest moving planetary body here is obviously the Moon, which has a "sidereal" period of 27.321661 days (that is, a full circle travelled around the earth relative to the stars, *not* the time from new moon to new moon, which would be a "synodic" period of 29.53 days). 1 arc-minute is therefore traversed by the Moon on average in 1.82 minutes. Our clock could be off by, at worst, roughly 2 minutes. 
 
@@ -67,7 +67,7 @@ Calculations for: 2026-06-04 12:00 UTC
 |  Planet |   RA (°) |  Dec (°) |
 +---------+----------+----------+
 |     sun |  72.5381 |  22.4654 |
-|    moon | 302.0482 | -23.0476 |
+|    moon | 301.9089 | -23.0753 |
 | mercury |  95.4145 |  25.4792 |
 |   venus | 111.4463 |  23.9720 |
 |    mars |  40.0928 |  14.9775 |
