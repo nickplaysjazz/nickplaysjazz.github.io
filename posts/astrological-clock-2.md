@@ -53,4 +53,4 @@ Let's take our calculated planetary positions, express them in terms of the J200
 
 Spectacular! This is exactly what we are hoping to see: our calculated right ascension values are within 1-2 arc-minutes of the NASA dataset! How satisfying to see. We could do the same for the declination, but I'm confident at this point that we can trust our calculations.
 
-In my next post we will map our planetary positions into astrological terms.
+In my [next post]({% for post in collections.all %}{% if post.inputPath == "./posts/astrological-clock-3.md" %}{{ post.url | url }}{% endif %}{% endfor %}) we will map our planetary positions into astrological terms.
