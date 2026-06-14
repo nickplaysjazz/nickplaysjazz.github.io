@@ -66,4 +66,4 @@ If you look on the center-right, you will see the readouts of the positions of t
 
 Once more, we confirm that our data is within 1 arc-minute or so of more trustworthy sources. (I had Astrolog use the [Swiss Ephemeris](https://www.astro.com/swisseph/swephinfo_e.htm), which is evidently today's state-of-the-art data for astrologers.) 
 
-On our next post we will break out the electronics and begin building our clock.
+On our [next post]({% for post in collections.all %}{% if post.inputPath == "./posts/astrological-clock-4.md" %}{{ post.url | url }}{% endif %}{% endfor %}) we will break out the electronics and begin building our clock.

@@ -285,13 +285,18 @@ table {
     border-collapse: collapse;
     margin: 1.5rem 0;
     font-size: 1rem;
-    line-height: 0.5;
+    line-height: 1.4;
 }
 
 th, td {
     padding: 0.75rem 1rem;
     text-align: left;
     border-bottom: 1px solid #e2a280;
+
+    white-space: normal !important;
+    word-wrap: break-word;        
+    word-break: break-word;       
+    vertical-align: top;          
 }
 
 thead th {
