@@ -138,4 +138,4 @@ Compiling and loading this onto the Arduino gives us a succesful clock! It corre
 
 ![Demonstration of the clock displaying time on the OLED screen.](/images/clock_example.jpg)
 
-In my next post, we are going to put this all together. We have the time calculated, now we just need to perform the astrology calculations on-board the Arduino and display them. I expect the biggest obstacle will be graphical design, not the calculations, but we will see!
+In my [next post]({% for post in collections.all %}{% if post.inputPath == "./posts/astrological-clock-5.md" %}{{ post.url | url }}{% endif %}{% endfor %}), we are going to put this all together. We have the time calculated, now we just need to perform the astrology calculations on-board the Arduino and display them. I expect the biggest obstacle will be graphical design, not the calculations, but we will see!
