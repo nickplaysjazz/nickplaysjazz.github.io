@@ -26,6 +26,7 @@ metadata:
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
+    <author><name>{{ metadata.author.name }}</name></author>
     <link href="{{ absolutePostUrl }}"/>
     
     <updated>{{ post.date.toISOString() }}</updated>
