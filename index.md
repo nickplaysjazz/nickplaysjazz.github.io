@@ -18,9 +18,9 @@ I'll be using this blog to share updates on whatever fun projects I'm working on
 </ul>
 
 ### Recent Finds
+* My favorite mod for Morrowind, [Tamriel Rebuilt](https://www.tamriel-rebuilt.org/), just released a major update, bringing a huge amount of new content to my favorite RPG. Check it out!
 * I'm learning about OpenGL for an in-progress project. I'm getting a lot out of [LearnOpenGL](https://learnopengl.com/Introduction) right now. 
 * This fantastic [yeast bread recipe](https://sallysbakingaddiction.com/homemade-artisan-bread/) is my favorite bread to bake lately.
-* [My 2026 Junethack Tournament performance](https://junethack.net/user/nickplaysjazz) - See how I did this year during the 2026 Junethack tournament.
 
 <div class="site-footer" style="text-align: center; margin-bottom: 1rem;">
 This website is a member of the Combo Crew webring. Visit other members:
